@@ -5,56 +5,127 @@
     4. Estilos visuales (ej: shadow, border etc)
     5. Otros,reglás de CSS y más
 */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap");
 
-:root{
-    /* Colors */
-    --bitcoin-orange: #F7931A;
-    --soft-orange: #FFE9D5;
-    --secondary-blue: #1A9AF7;
-    --soft-blue: #E7F5FF;
-    --warn-black: #201E1C;
-    --warn-black-1: #282623;
-    --gray: #BABABA;
-    --off-white: #FAF8F7;
-    --just-white:#FFFFFF;
+:root {
+  /* Colors */
+  --bitcoin-orange: #f7931a;
+  --soft-orange: #ffe9d5;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warn-black: #201e1c;
+  --warn-black-1: #282623;
+  --gray: #bababa;
+  --off-white: #faf8f7;
+  --just-white: #ffffff;
+
+  /* espaciado */
+  --font-size-sans-small: 14px;
+  --font-size-sans-normal: 18px;
+  --font-size-sans-large: 24px;
+
+  --font-size-inter-small: 12px;
+  --font-size-inter-normal: 16px;
+
+  /* line height  */
+  --line-height-inter-small: 18px;
+  --line-height-inter-normal: 23px;
+  --line-height-inter-large: 26px;
+
+  --line-height-inter-small: 15px;
+  --line-height-inter-normal: 19px;
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-html{
-    font-size: 62.5%;
-    font-family: 'DM Sans', sans-serif;
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
 }
 
-header{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    min-width: 320px;
-    height: 334px;
-    text-align: center;
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  height: 334px;
+  text-align: center;
+  background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
 }
 
-header img{
-    width: 150px;
-    height: 24px;
-    margin-top: 60px;
-    align-self: center;
+header img {
+  width: 150px;
+  height: 24px;
+  margin-top: 60px;
+  align-self: center;
 }
 
-.header--title-container{
-    width: 90%;
-    min-width: 288px;
-    max-width: 900px;
-    height: 218px;
-    margin-top: 40px;
-    text-align: center;
-    align-self: center;
+.header--title-container {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  height: 218px;
+  margin-top: 40px;
+  text-align: center;
+  align-self: center;
 }
+
+.header--title-container h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.header--title-container p{
+    font-size: 1.4rem; /*14px*/
+    margin-top: 25px;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--off-white)
+}
+
+.header--title-container .header--button{
+    position: absolute;
+    /* top:270px; */
+    top: calc(100% - 24px);
+    display: block;
+    left: calc(50% - 114.5px);
+    /* margin-top: 35px; */
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /*Sombras*/box-shadow: 0px 4px 8px rgba(89,73,30, 0.16);
+    border:none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--warn-black)
+}
+
+.header--button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('./assets/icons/down-arrow.svg');
+}
+/*
+    1. Posicionamiento
+    2. Modelo de caja
+    3. Tipografia
+    4. Estilos (visuales)
+    5. Otros
+*/
